@@ -22,5 +22,11 @@
     "name": "Car",
     "price": 14000,
     "imgUrl": "/imgs/car.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Rings",
+    "price": 2500,
+    "imgUrl": "/imgs/marriage-ring.jpg"
   }
 ]
