@@ -13,20 +13,62 @@
   },
   {
     "id": 3,
-    "name": "Banana",
-    "price": 1.05,
-    "imgUrl": "/imgs/banana.jpg"
+    "name": "Refrigerator",
+    "price": 30499.5,
+    "imgUrl": "/imgs/refrigerator.jpg"
   },
   {
     "id": 4,
-    "name": "Car",
-    "price": 14000,
-    "imgUrl": "/imgs/car.jpg"
+    "name": "Flash Drive - 64 GB",
+    "price": 7.49,
+    "imgUrl": "/imgs/pendrive.jpg"
   },
   {
     "id": 5,
     "name": "Rings",
     "price": 2500,
     "imgUrl": "/imgs/marriage-ring.jpg"
+  },
+  {
+    "id": 6,
+    "name": "One+ Ace 2 Pro",
+    "price": 799,
+    "imgUrl": "/imgs/oneplus-ace-2-pro.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Suzuki Hayabusa",
+    "price": 18799,
+    "imgUrl": "/imgs/suzuki-hayabusa.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Television",
+    "price": 1225,
+    "imgUrl": "/imgs/Television.jpg"
+  },
+  {
+    "id": 9,
+    "name": "T-Shirt",
+    "price": 24.99,
+    "imgUrl": "/imgs/T-shirt.jpg"
+  },
+  {
+    "id": 10,
+    "name": "PS-4",
+    "price": 249.99,
+    "imgUrl": "/imgs/ps-4.jpg"
+  },
+  {
+    "id": 11,
+    "name": "School Bag",
+    "price": 55,
+    "imgUrl": "/imgs/bag.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Smart Watch",
+    "price": 49.99,
+    "imgUrl": "/imgs/smart-watch.jpg"
   }
 ]
