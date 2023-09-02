@@ -14,7 +14,7 @@ type StoreItemProps = {
 export default function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
   const {
     getItemQuantity,
-    increaseCartQuanity,
+    increaseCartQuantity,
     decreaseCartQuantity,
     removeFromCart,
   } = useShoppingCart()
@@ -27,18 +27,21 @@ export default function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
         variant="top"
         src={imgUrl}
         height="200px"
-        style={{ objectFit: "cover" }}
+        style={{
+          objectFit: "cover",
+          objectPosition: "top",
+        }}
       />
       <Card.Body>
         <Card.Title className="d-flex justify-content-between align-items-baseline">
-          <span className="fs-3">{name}</span>
-          <span className="fs-5 text-muted">{formatCurrency(price)}</span>
+          <span className="fs-5">{name}</span>
+          <span className="fs-6 text-muted">{formatCurrency(price)}</span>
         </Card.Title>
         {quantity === 0 ? (
           <Button
             className="w-100"
             onClick={() => {
-              increaseCartQuanity(id)
+              increaseCartQuantity(id)
             }}
           >
             + Add to Cart
@@ -58,7 +61,7 @@ export default function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
               </span>
               <Button
                 onClick={() => {
-                  increaseCartQuanity(id)
+                  increaseCartQuantity(id)
                 }}
               >
                 +

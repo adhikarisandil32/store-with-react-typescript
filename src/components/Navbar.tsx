@@ -3,8 +3,11 @@ import Nav from "react-bootstrap/Nav"
 import { Navbar as NavbarBS } from "react-bootstrap"
 import Button from "react-bootstrap/esm/Button"
 import { NavLink } from "react-router-dom"
+import { useShoppingCart } from "../context/ShoppingCartContext"
 
 function Navbar() {
+  const { openCart, cartQuantity } = useShoppingCart()
+
   return (
     <>
       <NavbarBS expand="lg" className="bg-body-tertiary sticky-top">
@@ -12,13 +15,13 @@ function Navbar() {
           <NavbarBS.Toggle aria-controls="basic-navbar-nav" />
           <NavbarBS.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={NavLink} to="/home">
+              <Nav.Link as={NavLink} to="/" className="text-dark">
                 Home
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/store">
+              <Nav.Link as={NavLink} to="/store" className="text-dark">
                 Store
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/about">
+              <Nav.Link as={NavLink} to="/about" className="text-dark">
                 About
               </Nav.Link>
             </Nav>
@@ -27,6 +30,7 @@ function Navbar() {
                 height: "3rem",
                 width: "3rem",
               }}
+              onClick={openCart}
               variant="outline-primary"
               className="rounded-circle position-relative"
             >
@@ -39,7 +43,7 @@ function Navbar() {
                   transform: "translate(15%, -15%)",
                 }}
               >
-                <span className="text-white">0</span>
+                <span className="text-white">{cartQuantity}</span>
               </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
